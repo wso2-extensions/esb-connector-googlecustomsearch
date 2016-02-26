@@ -28,7 +28,6 @@ import org.wso2.connector.integration.test.base.RestResponse;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.lang.*;
 
 /**
  * Integration test class for Google Custom Search connector.
@@ -44,7 +43,7 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
     @BeforeClass(alwaysRun = true)
     public void setEnvironment() throws Exception {
 
-        init("googlecustomsearch-connector-1.0.0");
+        init("googlecustomsearch-connector-1.0.1-SNAPSHOT");
         esbRequestHeadersMap.put("Accept-Charset", "UTF-8");
         esbRequestHeadersMap.put("Content-Type", "application/json");
         apiRequestHeadersMap.putAll(esbRequestHeadersMap);
@@ -962,7 +961,7 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         Assert.assertEquals(esbRestResponse.getBody().getJSONObject("error").getJSONArray("errors").length(), apiRestResponse.getBody().getJSONObject("error").getJSONArray("errors").length());
     }
 
-     /**
+    /**
      * Positive test case for Search method with optional parameter for fields.
      */
     @Test(priority = 1, groups = {"wso2.esb"}, description = "googlecustomsearch {search} integration test with optional parameter fields.")
@@ -980,7 +979,7 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-       }
+    }
 
     /**
      * Negative test case for Search method with optional parameter fields.
