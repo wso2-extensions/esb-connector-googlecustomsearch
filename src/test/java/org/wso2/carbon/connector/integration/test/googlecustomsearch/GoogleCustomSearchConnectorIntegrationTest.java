@@ -66,7 +66,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -110,7 +109,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -155,7 +153,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -178,7 +175,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -200,7 +196,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -222,7 +217,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -267,7 +261,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -289,7 +282,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -311,7 +303,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -334,7 +325,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -354,7 +344,7 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
                 + "&searchType=" + connectorProperties.getProperty("searchType")
                 + "&imgColorType=" + connectorProperties.getProperty("invalidImgColorType");
 
-        RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);//
+        RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 400);
         Assert.assertEquals(esbRestResponse.getBody().getJSONObject("error").get("code"), apiRestResponse.getBody().getJSONObject("error").get("code"));
@@ -381,7 +371,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -428,7 +417,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -475,7 +463,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -521,7 +508,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -566,7 +552,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -588,7 +573,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -633,7 +617,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -677,7 +660,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -722,7 +704,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -744,7 +725,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
@@ -894,7 +874,6 @@ public class GoogleCustomSearchConnectorIntegrationTest extends ConnectorIntegra
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "GET", apiRequestHeadersMap);
 
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(apiRestResponse.getBody().get("context").toString(), esbRestResponse.getBody().get("context").toString());
         Assert.assertEquals(apiRestResponse.getBody().get("url").toString(), esbRestResponse.getBody().get("url").toString());
     }
 
