@@ -4,7 +4,7 @@
     "category": "Productivity Tools",
     "documentationUrl": "https://docs.wso2.com/display/ESBCONNECTORS/Google+Custom+Search+Connector",
     "description": "The Google Custom Search connector allows you to access the Google Custom Search REST API through WSO2 ESB. Google Custom Search allows web developers to feature specialized information in web searches, refine and categorize queries and create customized search engines, based on Google's core search technology.",
-    "status": "Unsupported",
+    "status": "Active",
     "labels": [
         "connector"
     ],
